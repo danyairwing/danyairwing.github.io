@@ -1,0 +1,177 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/* Defaults */
+:root {
+  --accent-color: #ac00e6;
+  --unvisited-link: #1a1a1a;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  background-color:black;
+}
+
+/* Intro */
+@keyframes spin {
+  0% {
+    offset-distance: 0%;
+    color: white;
+  }
+  50% {
+    color: var(--accent-color);
+  }
+  100% {
+    offset-distance: 100%;
+    color: white;
+  }
+}
+
+text {
+  font-family: 'Playfair Display';
+  text-decoration: none;
+  font-size: 3vmin;
+  color: white;
+}
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+a:visited {
+  color: var(--unvisited-link);
+
+}
+
+.intro text {
+  pointer-events: none;
+  font-family: 'Playfair Display';
+  text-decoration: none;
+  font-size: 6vmin;
+  color: black;
+  transition: color 0.5s ease-out;
+  /* offset-path: circle(50% at 25% 25%); */
+  position: absolute;
+  display:block;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  width: 50px;
+  height: 50px;
+  offset-anchor: 40vmin 0%;
+
+  offset-path: path('M 5 5 m -4, 0 a 4,4 0 1,0 8,0 a 4,4 0 1,0 -8,0');
+}
+
+/* Main Buttons */
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+@keyframes flash {
+  0% {color: black;}
+  70% {color: black;}
+  100% {color: white;}
+}
+
+.buttons button {
+  /* overflow */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: block;
+  line-height: 1em; /* a */
+  max-height: 5em; /* a x number of line to show (ex : 2 line)  */
+
+  margin-bottom: 1vmin;
+
+  font-family: 'Playfair Display';
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border: none;
+  background-color: black;
+  border-radius: none;
+  width: 200px;
+  height: 50px;
+  transition: 0.1s;
+  animation: 2s ease-in-out flash;
+}
+
+.main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+
+.buttons button:hover {
+  background-color: rgb(20, 20, 20);
+}
+
+/* Paragraph */
+
+.paragraph {
+
+  transition: 0.7s;
+  z-index: 20;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+
+  visibility: hidden;
+  opacity: 0;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paragraph div {
+  background-color: rgba(0,0,0,0.2);
+  width: 70vmin;
+  height: 70vmin;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.paragraph div text {
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.paragraph button { /* exit button */
+  background-color: black;
+  color: white;
+  width:  40px;
+  height: 40px;
+  border-radius: none;
+  border: none;
+  position: absolute;
+  margin-top: 70vmin;
+}
+
+.copyright {
+  position:absolute;
+  bottom:0px;
+  right:0px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+  font-size: 10px;
+}
