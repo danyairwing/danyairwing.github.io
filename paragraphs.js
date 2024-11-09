@@ -3,18 +3,20 @@ var paragraphs = {
     "title":"INFO",
 
     "content":`
-    <img src="src/photo.png" style="height: 15vmax;">
+    I'M A 16 YEARS OLD ARTIST FROM BELARUS, VITEBSK. I MAKE MUSIC AND ARTWORK.
+    CURRENTLY WORKING UNDER THE ALIAS OF "instrumentalist" (PREVIOSLY KNOWN AS HEXADECIMALBLISS), I ALSO SCORE GAME SOUNDTRACKS.
+    MOST OF MY WORK IS AVAILIBLE ON MY <a href="https://irwing.bandcamp.com">BANDCAMP</a>, ALL OF MY MUSIC IS FREE. 
     <br>
-    I'M A 15 YEAR OLD ARTIST FROM BELARUS, VITEBSK.
-
+    THIS WEBSITE IS A HUB FOR INFORMATION ABOUT MYSELF, ALSO CONTAINING A GALLERY OF ARTWORKS.
     <br>
-    I WAS INFLUENCED BY DIFFERENT FORUMS, WEBSITES, VIDEOS, SPECIFICALLY IN ENGLISH.
+    IF YOU'RE INTERESTED IN RECENT NEWS, CHECK OUT MY <a href="https://t.me/hexbliss">TELEGRAM CHANNEL</a>.
     <br>
-    I MAKE MUSIC AND ARTWORK.
+    OTHER LINKS INCLUDE:<br>
+    <a href="https://youtube.com/@DanyaIrwing"> YOUTUBE </a> <br>
+    <a href="https://soundcloud.com/exposedmachine"> SOUNDCLOUD </a> <br>
+    <a href="https://soundcloud.com/danyairwing"> SOUNDCLOUD ALT ACCOUNT </a> <br>
     <br>
-    <img src="src/cds.png" style="height: 25vmax;">
-
-
+    ALSO, SOME RELEASES ARE AVAILABLE ON STREAMING SERVICES. SIMPLY SEARCH FOR THE ALIAS. <3
 
     `
   },
@@ -25,30 +27,18 @@ var paragraphs = {
     MAIL:     <a href="mailto:danya.irwing@gmail.com"> DANYA.IRWING@GMAIL.COM </a> <br>
     TELEGRAM: <a href="https://t.me/ziggomatic17"> @ZIGGOMATIC17 </a> <br>
     DISCORD:  @DANYAIRWING <br>
-
-
+    I <u>DO</u> TAKE COMMISSIONS! REACH OUT TO ME IF YOU FEEL LIKE.</br>
+    ALBEIT, STILL INTERESTED IN OTHER OFFERS - PERHAPS A COLLABORATION, EVEN PERFORMING LIVE, ETC.
     `
   },
   2: {
-    "title":"PORTFOLIO",
+    "title":"GALLERY",
 
     "content":`
-    MUSIC: <br> <br>
-    <iframe style="border: 0; width: 55vmin; height: 55vmin;" src="https://bandcamp.com/EmbeddedPlayer/album=3587701148/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://irwing.bandcamp.com/album/dysmorphia">Дисморфия (Dysmorphia) by hexadecimalbliss</a></iframe>
-    <iframe style="border: 0; width: 55vmin; height: 55vmin;" src="https://bandcamp.com/EmbeddedPlayer/album=526273803/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://irwing.bandcamp.com/album/worship-power">WORSHIP POWER by hexadecimalbliss</a></iframe>
-
-
-
-    <br> <br>
-    GAME DEVELOPMENT: <br> <br>
-    <a href="https://www.roblox.com/groups/16040305/Pearl-Division"> PEARL DEVISION (ROBLOX) </a> <br>
-    <a href="https://www.roblox.com/groups/6219314/Anarchy-Development-Studio"> ANARCHY DEVELOPMENT (ROBLOX) </a> <br>
-    OTHER PLATFORMS SOON
-    <br>
-
-    <img src="src/keyboard.png" style="height: 25vmax;">
-
-
+    IF YOU'RE INTERESTED IN RECENT ARTWORK, CHECK OUT MY <a href="https://t.me/hexbliss">TELEGRAM CHANNEL</a>.
+    <img src="src/zimaposter.png"> </img>
+    <video src="src/zimateasing1.mp4" type="video/mp4" controls> </video>
+    <video src="src/zimateasing2.mp4" type="video/mp4" controls> </video>
     `
   },
 
@@ -104,7 +94,7 @@ function loadParagraphs() {
       for (var index=0; index<imgs.length; index++) {
         console.log("IMG");
         var img = imgs[index];
-        img.style.animation = "pixelate 1s ease-in-out";
+        img.style.filter = "pixelate 1s ease-in-out";
 
       }
 
